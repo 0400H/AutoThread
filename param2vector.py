@@ -22,4 +22,4 @@ def param2vector(fileaddress = '') :
 # dataset_list = param2vector('./testcase.param')
 # print('case_len:', len(dataset_list[1][0]))
 # for i in range(0, len(dataset_list[0])) :
-#     print('ID:', i, 'tabel:', dataset_list[0][i], 'case:', dataset_list[1][i])
+#     print('ID:', i, 'label:', dataset_list[0][i], 'case:', dataset_list[1][i])
