@@ -162,11 +162,11 @@ class MultipleRegression(object) :
                 key = 0
 
 
-# example
-dataset = param2vector('./testcase.param')
-a = MultipleRegression(20, dataset, './param.bin')
-a.Import('./param.bin', a.weight)
-# a.BackWard(0.00000001, 10000)
-# a.WhileBackWard(0.90, 0.001)
-a.BestWhileBackWard(0.55)
-a.printdata()
+if __name__ == '__main__':
+    dataset = param2vector('./testcase.param')
+    a = MultipleRegression(20, dataset, './param.bin')
+    a.Import('./param.bin', a.weight)
+    # a.BackWard(0.00000001, 10000)
+    # a.WhileBackWard(0.90, 0.001)
+    a.BestWhileBackWard(0.55)
+    a.printdata()
