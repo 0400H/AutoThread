@@ -18,8 +18,8 @@ def param2vector(fileaddress = '') :
         return dataset_list
 
 
-# example
-# dataset_list = param2vector('./testcase.param')
-# print('case_len:', len(dataset_list[1][0]))
-# for i in range(0, len(dataset_list[0])) :
-#     print('ID:', i, 'label:', dataset_list[0][i], 'case:', dataset_list[1][i])
+if __name__ == '__main__':
+    dataset_list = param2vector('./testcase.param')
+    print('case_len:', len(dataset_list[1][0]))
+    for i in range(0, len(dataset_list[0])) :
+        print('ID:', i, 'label:', dataset_list[0][i], 'case:', dataset_list[1][i])
